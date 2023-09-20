@@ -1,0 +1,5 @@
+package com.org.user.exceptions;
+
+public class ValidationException extends Exception {
+
+}

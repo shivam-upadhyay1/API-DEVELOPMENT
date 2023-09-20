@@ -1,0 +1,60 @@
+package com.org.user.serviceimpl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.org.user.entities.User;
+import com.org.user.repository.UserRepository;
+import com.org.user.service.Service;
+@org.springframework.stereotype.Service
+public class ServiceImpl implements Service {
+
+	
+	@Autowired
+	private UserRepository userRepository;
+	@Override
+	public User getUser(int id) {
+		    
+		return userRepository.findById(id).orElse(new User());
+	}
+
+	@Override
+	public List<User> getAllUser(User user) {
+              return userRepository.getAll(user);
+         
+	
+	}
+
+	@Override
+	public User addUser(User user) {
+		return userRepository.save(user);
+	}
+
+	
+
+		 
+		   
+
+	
+	@Override
+	public void deleteUser(int id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	 @Override
+	    public User updateUser(int id, User updatedUser) {
+	        // Fetch the existing user by ID
+	        User existingUser = userRepository.findById(userId)
+	                .orElseThrow(() -> new NotFoundException("User not found"));
+
+	        // Update the existing user with the new information
+	        existingUser.setUserName(updatedUser.getUserName());
+	        existingUser.setEmail(updatedUser.getEmail());
+
+	        // Save the updated user to the database
+	        return userRepository.save(existingUser);
+	    }
+
+}

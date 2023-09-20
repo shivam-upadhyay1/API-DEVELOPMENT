@@ -1,0 +1,5 @@
+package com.socialmedia.entities;
+
+public class SocialMedia {
+
+}

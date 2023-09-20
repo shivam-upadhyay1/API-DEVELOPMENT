@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.org.user.exceptions.ValidationException&apos; to &apos;NotFoundException&apos;&#x0D;&#x0A;- Original project: &apos;UserApi&apos;&#x0D;&#x0A;- Original element: &apos;com.org.user.exceptions.ValidationException&apos;&#x0D;&#x0A;- Renamed element: &apos;com.org.user.exceptions.NotFoundException&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;ValidationException&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.org.user.exceptions{ValidationException.java[ValidationException" matchStrategy="1" name="NotFoundException" qualified="false" references="true" similarDeclarations="false" stamp="1694498998279" textual="false" version="1.0"/>
+</session>

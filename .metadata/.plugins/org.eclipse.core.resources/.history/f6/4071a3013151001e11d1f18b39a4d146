@@ -1,0 +1,25 @@
+package com.org.user.exceptions;
+
+import org.springframework.web.bind.annotation.ControllerAdvice;
+
+@ControllerAdvice
+public class ValidationException extends RuntimeException {
+
+    public ValidationException(String message) {
+        super(message);
+    }
+
+    public ValidationException(String message, Throwable cause) {
+        super(message, cause);
+    }
+        public void NotFoundException(String message) {
+            super(message);
+        }
+
+        public void NotFoundException(String message, Throwable cause) {
+            super(message, cause);
+        
+        
+    }
+}
+

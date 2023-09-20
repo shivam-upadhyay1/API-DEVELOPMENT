@@ -1,0 +1,27 @@
+package com.socialmedia.controllers;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.socialmedia.entities.SocialMedia;
+import com.socialmedia.serviceimpl.SocialMediaServiceImpl;
+
+@RestController
+@RequestMapping("/social")
+public class SocialController {
+
+	@Autowired
+	private SocialMediaServiceImpl socialMediaServiceImpl;
+
+	//get single content
+	@GetMapping("/{id}")
+	public SocialMedia getSingleContent(@PathVariable("id") int id)
+	{
+		SocialMedia content = socialMediaServiceImpl.getContent(id);
+		return content;
+	}
+
+}

@@ -1,0 +1,45 @@
+package com.socialmedia.serviceimpl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.socialmedia.entities.SocialMedia;
+import com.socialmedia.repository.SocialMediaRepo;
+import com.socialmedia.service.SocialMediaService;
+@Service
+public class SocialMediaServiceImpl implements SocialMediaService {
+
+	@Autowired
+	private SocialMediaRepo socialMedia;
+	@Override
+	public SocialMedia getContent(int id) {
+		return socialMedia.
+	}
+
+	@Override
+	public List<SocialMedia> getAllContent() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public SocialMedia addPost(SocialMedia socialMedia) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public SocialMedia updatePost(int id, SocialMedia socialMedia) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void deletePost(int id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

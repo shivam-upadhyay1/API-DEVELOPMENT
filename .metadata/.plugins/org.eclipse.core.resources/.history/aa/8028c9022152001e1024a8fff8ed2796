@@ -1,0 +1,5 @@
+package com.socialmedia.configuration;
+
+public class SwaggerConfig {
+
+}
